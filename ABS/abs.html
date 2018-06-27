@@ -1,0 +1,622 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Story In Vision</title>
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="jquery.waypoints.min.js"></script>
+  <script src="jquery.counterup.min.js"></script>
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style>
+      .myStyle{
+        margin-top: -200px;
+      }
+      .myNav{
+        z-index: 999;
+        background: none;
+      }
+      .mynavbrand{
+        color: #FFFFFF;
+        text-align: center;
+      }
+
+      #story{
+        font-size: 40px;
+        padding-top: 20px;
+        padding-bottom: -60px;
+        font-weight: bold;
+      }
+      #one{
+        margin-top: -40px;
+      }
+    .collapse.navbar-nav>a:hover{
+      color:#DAA520;
+    }
+  .carousel-caption{
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-60%, -60%);
+    width: 100%;
+  }
+  .carousel-caption span{
+
+    text-transform: uppercase;
+    display: block;
+  }
+  .text1{
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+    position: relative;
+    animation: text 3s 1;
+  }
+  .text2{
+    font-size: 70px;
+    color: #DAA520;
+    webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 5s; /* Firefox < 16 */
+          -ms-animation: fadein 5s; /* Internet Explorer */
+           -o-animation: fadein 5s; /* Opera < 12.1 */
+              animation: fadein 5s;
+  }
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  @keyframes text {
+    0%{
+      color: black;
+      margin-bottom: -40px;
+    }
+    30%{
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+    }
+  }
+  .linebreak{
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+  }
+
+  .aboutus{
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  .abtcnt{
+    text-align: justify;
+    font-weight:500;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .frame{
+    margin-le
+  }
+  .webelieve{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .stat{
+    background: #696969;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    margin-top: 100px;
+  }
+  .stat-items h2{
+    font-weight: bolder;
+    font-size: 32px;
+    color: darkorange;
+  }
+
+  .stat-items h3{
+    letter-spacing: 4px;
+  }
+  .Latest h1{
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-right: 60px;
+    float: right;
+  }
+  .Latest h4{
+    margin-top: 110px;
+    float: right;
+    margin-right: -290px;
+  }
+.marquee{
+  margin-top: 50px;
+  margin-right: 25px;
+}
+
+
+    </style>
+    </head>
+    <body>
+
+    <div class="Header">
+      <nav class="myNav navbar navbar-expand-lg navbar-dark  ">
+    <a class="mynavbrand navbar-brand" href="#"><p id="story">Story In Vision</p> <br><p id="one">ONE ROOF MEDIA HOUSE</p></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link active mr-4 font-weight-bold" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link mr-4 font-weight-bold" href="#">Service</a>
+        <a class="nav-item nav-link mr-4 font-weight-bold" href="#">Galary</a>
+        <a class="nav-item nav-link mr-4 font-weight-bold" href="#">Trailer</a>
+        <a class="nav-item nav-link mr-4 font-weight-bold" href="#">Testimonials</a>
+        <a class="nav-item nav-link mr-4 font-weight-bold" href="#">Team</a>
+        <a class="nav-item nav-link font-weight-bold" href="#">Contact us</a>
+      </div>
+    </div>
+  </nav>
+
+      <div id="carouselExampleIndicators" class="myStyle carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner data-interval='7000'">
+        <div class="carousel-item active">
+          <img class="d-block w-100 img-fluid" src="img1.jpg" alt="First slide" style="filter: brightness(30%)">
+          <div class="absolute-div">
+            <div class="carousel-caption">
+              <span class="text1">We create films</span>
+              <span class="text2">with vision in our stories</span>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="img2.jpeg" alt="Second slide "style="filter: brightness(30%)" >
+          <div class="absolute-div">
+            <div class="carousel-caption">
+              <span class="text1">Here we</span>
+              <span class="text2">Believe in creativity</span>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid"  src="img3.jpg" alt="Third slide"style="filter: brightness(30%)">
+          <div class="absolute-div">
+            <div class="carousel-caption">
+              <span class="text1">Its our honor to</span>
+              <span class="text2">portray our passion</span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div>
+    </div>
+
+    <div class='container '>
+      <img class="linebreak img-fluid" src="break.png" alt="line break">
+      <h1 class="aboutus">About us</h1>
+
+      <p class="abtcnt">The world isn’t running on mundane routines, there is more to predictions, philosophies or expectations which we never can measure, judge or anticipate. It is called MAGIC and this magic happens in Story In Vision. Magic changes it all, in a wink, just like that, it brings the beauty out of the lame. We firmly believe that and we like to manifest that.
+
+  We believe in magic, we believe in omens, reasons, causes, and purposes. We understand what is big and what is beautiful and we know what it takes to build something big and beautiful.</p>
+
+
+      <iframe class="frame embed-responsive embed-responsive-16by9 col-xs-12 text-center" width="560" height="315" src="https://www.youtube.com/embed/Kh17J9-Qa_k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+      <p class="webelieve">We believe in out of the box work and change the benchmarks of the entertainment industry</p>
+
+
+    </div>
+
+    <section class="stat" id="stat">
+      <div class="content-box">
+        <br><br>
+        <div class="container-fluid">
+          <div class="row text-center">
+            <div class="col-md-3">
+              <div class="stat-items">
+                <h2><span class="counter text-center">5</span>  <span>+</span></h2>
+                <hr width="130px" color="white">
+                <h3>AWARDS</h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="stat-items">
+                <h2><span class="counter text-center">4</span>  <span>+</span></h2>
+                <hr width="100px" color="white">
+                <h3>YEARS</h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="stat-items">
+                <h2><span class="counter text-center">86</span>  <span>+</span></h2>
+                <hr width="280px" color="white" >
+                <h3>WORK COMPLETED</h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="stat-items">
+                <h2><span class="counter text-center">70</span>  <span>+</span></h2>
+                <hr width="220px" color="white">
+                <h3>HAPPY CLIENT</h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="trailer">
+      <div class='container-fluid Latest'>
+      <h1>Latest Trailer - - - -</h1>
+      <h4>What we did</h4>
+
+    <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="8"  loop="true">
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/0VFJUEkVzMU"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/vqAJ_romrFk"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/1E9j4689ZWQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/tBibHSnMJGo"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="marquee" width="350" height="200" src="https://www.youtube.com/embed/VkJhRHY3BVQ"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </marquee>
+      </div>
+    </section>
+
+  <script type="text/javascript">
+  jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 2000
+            });
+        });
+
+  </script>
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </body>
+  </html>
